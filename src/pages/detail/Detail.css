@@ -1,0 +1,59 @@
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  .toast-body {
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  .btn-close {
+    color: #999;
+    font-size: 12px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+.detail_box2{
+    width: 100%;
+}
+
+.size, .diameter, .quantity{
+    border: .8px solid rgb(222, 222, 222);
+    padding: 10px;
+}
+
+.size-btn{
+    background-color: white;
+    border: .8px solid rgb(193, 193, 193);
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.cart-btn{
+    width: 100%;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    background-color: rgb(1,27,53);
+    padding: 10px 10px
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile_carousel_detail{
+        width: 90% !important;
+    }
+    .detail_box1{
+        margin-top: 20px;
+    }
+}

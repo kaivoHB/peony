@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13,61,82);
+    color: white;
+    padding: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: orange;
+}

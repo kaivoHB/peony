@@ -1,0 +1,51 @@
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  .toast-body {
+    font-weight: bold;
+    color: #ff0000;
+  }
+  
+  .btn-close {
+    color: #999;
+    font-size: 12px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .login_mobile{
+    width: 25%;
+}
+
+.login-btn-register{
+  width: 100px;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  background-color: rgb(0, 46, 91);
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .login_mobile{
+        width: 100%;
+    }
+    .login-btn-register{
+      width: 25%;
+    }
+    .login-box{
+      width: 100% !important;
+    }
+}
