@@ -28,7 +28,7 @@ function Detail() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`http://localhost:5555/products/${id}`);
+            const response = await axios.get(`https://peony-be.glitch.me/products/${id}`);
             setProducts(response.data);
         } catch (error) {
             console.log('Error:', error);

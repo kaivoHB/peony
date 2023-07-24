@@ -19,7 +19,7 @@ function Register() {
         if(value.username !== '' && value.password !== '' && value.second_password !== ''){
             if(value.password ===  value.second_password){
                 try {
-                    const result = await axios.post(`http://localhost:5555/register?username=${registerInfo.username}&password=${registerInfo.password}`, registerInfo);
+                    const result = await axios.post(`https://peony-be.glitch.me/register?username=${registerInfo.username}&password=${registerInfo.password}`, registerInfo);
                     setRegisterResult(result.data);
                     if(result.data === 'Đăng ký thành công!'){
                         toast.success(result.data)

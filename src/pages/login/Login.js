@@ -27,7 +27,7 @@ function Login() {
     const handleSubmit = async (e, value) => {  
         e.preventDefault();
         try {
-            const result = await axios.post('http://localhost:5566/login', userInputInfor);
+            const result = await axios.post('https://peony-be-token.glitch.me/login', userInputInfor);
             setLoginResult(result.data);
             dispatch(saveToken(result.data));
             Cookies.set('token', result.data);
@@ -47,8 +47,8 @@ function Login() {
 
     return (
         <div>
+            <wc-toast></wc-toast>
             <Nav />
-
             <div className='container main-content'>
                 <div className='row'>
                     <div className='col-sm'>

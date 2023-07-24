@@ -9,9 +9,10 @@ function Shop() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:5555/products');
+            const response = await axios.get('https://peony-be.glitch.me/products');
             const data = Object.values(response.data);
             setProducts(data);
+            console.log(products);
         } catch (error) {
             console.log('Error:', error);
         }
